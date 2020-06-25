@@ -1,0 +1,45 @@
+<%- include('./../components/header') %>
+<section class="row home">
+    <article class="home-present col-12 col-sm-11 col-lg-12 col-xl-12 bg-danger text-light">
+        <h2>Encontrá la propiedad que querés, al mejor precio.<img src="./../img/llaves.png" class="key-home" alt=""></h2>
+        <a href="/" class="btn btn-warning off-btn">Ver Ofertas</a>
+    </article>
+    <article class="box card col-12 col-sm-6 col-lg-5 col-xl-3">
+        <article class="box-content-image box-content-image-1">
+            <img src="./../img/sale.png" class="sale" alt="sale">
+        </article>
+        <article class="box-description">
+            <p>Casas</p>
+        </article>
+    </article>
+    <article class="box card col-12 col-sm-6 col-lg-5 col-xl-3">
+        <article class="box-content-image box-content-image-2">
+            <img src="./../img/sale.png" class="sale" alt="sale">
+        </article>
+        <article class="box-description">
+            <p>Departamentos</p>
+        </article>
+    </article>
+    <article class="box card col-12 col-sm-6 col-lg-5 col-xl-3">
+        <article class="box-content-image box-content-image-3">
+            <img src="./../img/sale.png" class="sale" alt="sale">
+        </article>
+        <article class="box-description">
+            <p>Oficinas</p>
+        </article>
+    </article>
+    <article class="col-12 col-sm-11 col-lg-12 col-xl-12 bg-dark">
+        <article class="frm-add-propertie">
+            <article class="frm-content">
+                <form action="/add-properties" class="frm" method="POST" enctype="multipart/form-data">
+                    <input type="file" accept="image/*" name="image-1" id="image1" class="d-block">
+                    <input type="file" accept="image/*" name="image-2" id="image2" class="d-block">
+                    <input type="file" accept="image/*" name="image-3" id="image3" class="d-block">
+                    <input type="file" accept="image/*" name="image-4" id="image4" class="d-block">
+                    <button type="submit" class="btn btn-success d-block">Send</button>
+                </form>
+            </article>
+        </article>
+    </article>
+</section>
+<%- include('./../components/footer') %>

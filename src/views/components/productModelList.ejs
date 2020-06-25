@@ -1,0 +1,25 @@
+<% if(properties){ %>
+    <% properties.forEach((obj, i) => { %>
+        <article class="box-product col-12 col-sm-12 col-lg-6 col-xl-12 p-0 card">
+            <article class="col-12 col-sm-12 col-lg-12 col-xl-12 p-0 card-body">
+                <article class="box-product-img col-12 col-sm-12 col-lg-6 col-xl-12 p-0" style="background-image: url('<%- obj.image %>');"></article>
+                <p class="title-prod-list"><%- obj.title %></p>
+                <ul>
+                    <li class="text-light bg-primary status-list-product"><%- obj.status ? 'Disponible' : 'Consultar' %></li>
+                    <li class="text-primary"><%- obj.location %></li>
+                    <li class="text-success">US$<%- obj.amount %></li>
+                </ul>
+                <span class="bg-secondary tags-search">#<%- obj.type %></span>
+                <span class="bg-secondary tags-search">#DistritoTecnológico</span>
+                <span class="bg-secondary tags-search">#Argentina</span>
+                <span class="bg-secondary tags-search">#EnVenta</span>
+                <a href="/propiedad/<%- obj._id %>" class="btn btn-info btn-travel">Recorrer</a>
+            </article>
+        </article>
+        <% }) %>
+        <% }else{ %>
+            <article class="not-results col-12 col-sm-12 col-lg-12 col-xl-12">
+                <br><span>No hay productos para mostrar</span>
+            </article>
+        <% } %>
+<%- nextPag %>

@@ -1,0 +1,29 @@
+<%- include('./../components/header') %>
+<section class="row login">
+    <artyicle class="col-12 col-sm-12 col-lg-4 col-xl-4 tips5-login">
+        <article class="title-tips-login bg-danger">
+            <p>¿Necesitas que te ayudemos a encontrar tu casa ideal?</p>
+            <a href="/" class="btn btn-outline-warning d-block m-auto">Si, ayúdame</a>
+        </article>
+    </artyicle>
+    <article class="col-12 col-sm-12 col-lg-8 col-xl-8 bg-warning">
+        <form method="POST" action="verify-login" class="form-login">
+            <article class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input autofocus name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </article>
+            <article class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input name="pdw" type="password" class="form-control" id="exampleInputPassword1">
+            </article>
+            <article class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </article>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <a href="/register" class="btn btn-outline-info">or register</a>
+          </form>
+    </article>
+</section>
+<%- include('./../components/footer') %>

@@ -1,0 +1,366 @@
+p, span, h1, h2, h3, h4, h5, h6, li {
+  cursor: default; }
+
+main .home, main .login, main .propiedad {
+  margin-top: 56px; }
+
+main .error-404 {
+  background-image: url("./../img/404.jpg");
+  margin-top: 55px; }
+
+main section {
+  background-image: url("./../img/back.jpg");
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  margin-top: 105.438px; }
+
+main .home-present {
+  text-align: left;
+  margin: auto;
+  margin-top: 0;
+  height: 30vh;
+  padding: 3%; }
+  main .home-present h2 {
+    font-size: 2.3em; }
+  main .home-present .off-btn {
+    text-align: center;
+    display: block;
+    margin: auto;
+    width: 300px; }
+
+main .key-home {
+  margin-left: 2%;
+  width: 150px;
+  height: auto; }
+
+main footer {
+  background-color: #000; }
+
+main .box {
+  background-color: #dc3545;
+  border-radius: 10px;
+  transition: .5s;
+  height: 250px;
+  margin: auto;
+  padding: 0;
+  margin-top: 0; }
+
+main .box:hover {
+  box-shadow: 0px 0px 10px #000;
+  transition: .5s;
+  cursor: pointer; }
+
+main .box-content-image {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 150px; }
+
+@keyframes rotateIcon {
+  50% {
+    transform: rotate(-15deg); } }
+  main .box-content-image .sale {
+    animation: rotateIcon 2s ease infinite;
+    position: absolute;
+    margin: 1%;
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: auto; }
+
+main .box-content-image-1 {
+  background-image: url("./../img/house.jpg"); }
+
+main .box-content-image-2 {
+  background-image: url("./../img/apartment.jpg"); }
+
+main .box-content-image-3 {
+  background-image: url("./../img/cowork.jpg"); }
+
+main .box-description {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-shadow: 0px 0px 10px #000;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #FFAA00;
+  height: 100px; }
+  main .box-description p {
+    margin-top: 25px; }
+
+main .form-login {
+  margin: auto;
+  margin-top: 10vh;
+  width: 50%; }
+
+main .tips5-login {
+  background-image: url("./../img/tips-login-photo.jpg");
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh !important;
+  padding: 0; }
+
+main .title-tips-login {
+  font-size: 1.5em;
+  padding: 2%;
+  color: #FFF;
+  margin: 1%;
+  max-width: 80%;
+  min-height: 10vh; }
+
+main header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1; }
+
+main .terrenos, main .propiedad {
+  background-image: none !important;
+  background-color: #e1e1e1 !important; }
+
+main .propiedad table {
+  margin: auto;
+  margin-top: 10vh;
+  padding: 0;
+  width: 100%; }
+
+@media (max-width: 372px) {
+  main .propiedad table {
+    font-size: 10px; }
+  main .propiedad .description-product {
+    font-size: 12px;
+    margin: 0 !important; } }
+
+main .propiedad .content-table .card {
+  margin: auto;
+  margin-top: 10vh; }
+
+main .propiedad .checkout-query-product {
+  min-height: 140vh; }
+  main .propiedad .checkout-query-product .card-body {
+    height: 150px; }
+
+main .propiedad .view-more {
+  display: block;
+  width: 150px;
+  margin: 3% auto; }
+
+main .propiedad .product-image {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  cursor: pointer;
+  max-width: 100%;
+  margin: auto;
+  margin-top: 10vh;
+  height: 50vh; }
+
+main .propiedad .btn-next-img-product, main .propiedad .btn-back-img-product,
+main .propiedad .btn-next-img-product:focus, main .propiedad .btn-back-img-product:focus {
+  background-image: url("./../img/iterator.png");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transition: .5s;
+  margin: 2%;
+  margin-top: 35vh;
+  outline: none;
+  z-index: -1;
+  border: none;
+  height: 50px;
+  width: 50px;
+  opacity: 0; }
+
+main .propiedad .btn-next-img-product:hover, main .propiedad .btn-back-img-product:hover {
+  transition: .5s;
+  height: 55px;
+  width: 55px; }
+
+main .propiedad .btn-next-img-product {
+  position: absolute;
+  right: 0;
+  top: 0; }
+
+main .propiedad .btn-back-img-product {
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+main .propiedad .btn-back-img-product {
+  transform: rotate(180deg); }
+
+main .propiedad .product-image:hover .btn-next-img-product, main .propiedad .product-image:hover .btn-back-img-product {
+  z-index: 0;
+  opacity: 1 !important;
+  transition: .5s; }
+
+main .propiedad .description-product {
+  margin-bottom: 10vh !important; }
+
+main .propiedad .amount {
+  font-weight: 700;
+  font-size: 30px; }
+
+main .propiedad .title-related-search {
+  font-size: 20px;
+  margin: 5%; }
+
+main .propiedad .related-search {
+  margin: 1% auto;
+  transition: .5s; }
+
+main .propiedad .related-search:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: .5s; }
+
+main .propiedad .img-related-search {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 50%;
+  height: 100%; }
+
+main .propiedad .content-related-search-product {
+  font-weight: 700;
+  position: absolute;
+  padding: 5%;
+  height: 100%;
+  right: 0;
+  top: 0; }
+  main .propiedad .content-related-search-product .title-related-search-product {
+    font-size: 20px; }
+  main .propiedad .content-related-search-product .amount-related-search-product {
+    font-size: 15px; }
+
+main .propiedad .content-related-search-product li {
+  display: block;
+  padding: 1%;
+  width: 200px;
+  list-style: none; }
+
+main .propiedad .tags-search {
+  display: inline-block;
+  border-radius: 50px;
+  font-size: 12px;
+  color: #FFF;
+  padding: 1%;
+  margin: .5%; }
+  main .propiedad .tags-search a, main .propiedad .tags-search a:focus {
+    text-decoration: none;
+    transition: .5s;
+    font-weight: 700;
+    color: #FFF; }
+  main .propiedad .tags-search a:hover {
+    transition: .5s;
+    color: #FFAA00; }
+
+main .propiedad .item-product-list {
+  width: 100%;
+  margin: 1%;
+  padding: 0; }
+
+main .propiedad .item-product-list li {
+  display: inline-block;
+  list-style: none;
+  font-weight: 700;
+  padding: 3%; }
+
+main .propiedad .item-product {
+  width: 50px;
+  height: auto; }
+
+main .propiedad .count-item-product {
+  text-align: center;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  padding: 2%; }
+
+main .box-product {
+  height: 500px;
+  margin: 1% auto; }
+  main .box-product .title-prod-list {
+    text-align: center;
+    font-weight: 700;
+    margin: 1% auto;
+    width: 80%; }
+  main .box-product ul {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0; }
+  main .box-product li {
+    text-align: center;
+    list-style: none;
+    font-weight: 700; }
+  main .box-product .status-list-product {
+    border-radius: 50px;
+    margin: auto;
+    width: 45%; }
+  main .box-product .tags-search {
+    display: inline-block;
+    border-radius: 50px;
+    font-size: 12px;
+    color: #FFF;
+    padding: 1%;
+    margin: .5%; }
+
+main .box-product-img {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin: auto;
+  height: 300px; }
+
+main .btn-travel {
+  position: absolute;
+  margin: auto;
+  bottom: 0;
+  right: 0;
+  left: 0; }
+
+main .box-control-product {
+  min-height: 100vh; }
+
+main .filter-nav ul {
+  text-align: center;
+  margin: auto;
+  width: 100%; }
+
+main .filter-nav li {
+  display: inline-block;
+  padding: 1%; }
+
+main .not-results {
+  height: 100vh; }
+  main .not-results span {
+    display: block;
+    font-weight: 700;
+    text-align: center;
+    margin: auto;
+    margin-top: 5vh; }
+
+main .btn-itemPag, main .btn-itemPag:focus, main .btn-itemPag:hover {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 700;
+  border-radius: 50%;
+  transition: .5s;
+  color: #000;
+  padding: 2%;
+  margin: 1%;
+  width: 40px;
+  outline: none;
+  height: 40px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.3); }
+
+main .btn-itemPag:hover {
+  background-color: #ffb200; }

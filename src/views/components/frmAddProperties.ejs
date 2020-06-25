@@ -1,0 +1,25 @@
+    title: String,
+    description: String,
+    location: String,
+    image: String,
+    amount: Number,
+    type: String,
+    hashtag: Array,
+    rooms: {
+        bathroom: Number,
+        laundry: Number,
+        terrace: Number,
+        bethroom: Number,
+        garden: Number
+    }
+<article class="frm-add-propertie">
+    <article class="frm-content">
+        <form action="/add-properties" class="frm" method="POST">
+            <input type="file" accept="image/*" name="image-1" id="image1" class="d-block">
+            <input type="file" accept="image/*" name="image-2" id="image2" class="d-block">
+            <input type="file" accept="image/*" name="image-3" id="image3" class="d-block">
+            <input type="file" accept="image/*" name="image-4" id="image4" class="d-block">
+            <button type="submit" class="btn btn-success d-block">Send</button>
+        </form>
+    </article>
+</article>

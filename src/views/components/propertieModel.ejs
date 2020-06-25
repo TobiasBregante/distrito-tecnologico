@@ -1,0 +1,96 @@
+<article class="col-12 col-sm-12 col-lg-8 col-xl-8 p-0 bg-dark">
+    <p>
+        <span class="bg-secondary tags-search mt-2"><a href="/">Inicio</a> / <a href="/<%- product.type %>/1"><%- product.type %></a> / <a href="/propiedad/<%- product._id %>"><%- product.title %></a></span>
+    </p>
+    <article style="background-image: url('<%- product.image %>');" class="product-image">
+        <button class="btn-back-img-product" type="button"></button>
+        <button class="btn-next-img-product" type="button"></button>
+    </article>
+    <article class="content-table col-12 col-sm-12 col-lg-12 col-xl-12 p-0 bg-dark">
+        <table class="table table-dark">
+            <thead>
+                <tr>
+                    <th scope="col">Estado</th>
+                    <th scope="col">Tipo</th>
+                    <th scope="col">Localidad</th>
+                    <th scope="col">Contácto</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="text-success"><%- product.status ? 'Disponible' : 'Consultar' %></td>
+                    <td><%- product.type %></td>
+                    <td><%- product.location %></td>
+                    <td>1530-4216-86</td>
+                </tr>
+            </tbody>
+        </table>
+        <article class="description-product card col-12 col-sm-11 col-lg-11 col-xl-11">
+            <article class="card-body">
+                <span class="bg-secondary tags-search">#<%- product.type %></span>
+                <span class="bg-secondary tags-search">#DistritoTecnológico</span>
+                <span class="bg-secondary tags-search">#Argentina</span>
+                <span class="bg-secondary tags-search">#EnVenta</span>
+                <ul class="item-product-list">
+                    <li>
+                        <p>Baño</p>
+                        <img src="/img/baño.png" class="item-product">
+                        <p class="bg-warning count-item-product">2</p>
+                    </li>
+                    <li>
+                        <p>Lavadero</p>
+                        <img src="/img/lavadero.png" class="item-product">
+                        <p class="bg-warning count-item-product">1</p>
+                    </li>
+                    <li>
+                        <p>Terraza/Balcón</p>
+                        <img src="/img/terraza.png" class="item-product">
+                        <p class="bg-warning count-item-product">1</p>
+                    </li>
+                    <li>
+                        <p>Dormitorio</p>                        
+                        <img src="/img/dormitorio.png" class="item-product">
+                        <p class="bg-warning count-item-product">3</p>
+                    </li>
+                    <li>
+                        <p>Jardín</p>
+                        <img src="/img/jardín.png" class="item-product">
+                        <p class="bg-warning count-item-product">1</p>
+                    </li>
+                </ul>
+                <p>
+                    <%- product.description %>
+                </p>
+            </article>
+        </article>
+    </article>
+</article>
+<article class="bg-light checkout-query-product col-12 col-sm-12 col-lg-4 col-xl-4 p-0">
+    <article class="card checkout-query">
+        <article class="card-body">
+            <h2><%- product.title %></h2>
+            <p><span class="amount text-success">US$<%- product.amount %></span></p>
+        </article>
+        <button type="button" class="btn btn-info" value="<%- product._id %>">Consultar</button>
+    </article>
+    <h3 class="title-related-search">Búsquedas relacionadas</h3><hr>
+    <% if(relatedSearch){ %>
+        <% relatedSearch.forEach(obj => { %>
+            <article class="card related-search col-12 col-sm-12 col-lg-12 col-xl-12 p-0">
+                <article class="card-body">
+                    <article style="background-image: url('<%- obj.image %>');" class="img-related-search"></article>
+                    <ul class="content-related-search-product">
+                        <li class="title-related-search-product"><%- obj.title %></li>
+                        <li class="text-success amount-related-search-product">US$<%- obj.amount %></li>
+                        <li><a href="/propiedad/<%- obj._id %>" class="btn btn-info">Ver más</a></li>
+                    </ul>
+                </article>
+            </article>
+        <% }) %>
+    <% }else{ %>
+        <h4 class="text-dark">No hay recomendaciones disponibles.</h4>    
+    <% } %>
+    <% if(relatedSearch){ %>
+        <a href="/<%- relatedSearch[0].type %>/1" class="btn btn-primary view-more">Seguir viendo</a>    
+    <% } %>
+</article>

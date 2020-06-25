@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+    <head>
+        <%- include('./../components/head') %>
+        <title>Distrito Tecnológico</title>
+    </head>
+    <body>
+        <main class="container-fluid">
+            <header class="row">
+                <nav class="navbar navbar-expand-lg col-xl-12 navbar-dark bg-primary">
+                    <a class="navbar-brand" href="/">Distrito Tecnológico</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <article class="collapse navbar-collapse" id="navbarText">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="/">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/terrenos/1">Terrenos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/casas/1">Casas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/alquileres/1">Alquileres</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/inversiones/1">Inversiones</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/proyectos/1">Proyectos</a>
+                            </li>
+                            <% if(userSession){ %>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/profile">Profile</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/logout">Cerrar Sesión</a>
+                                </li>
+                            <% }else{ %>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/login">Iniciar Sesión</a>
+                                </li>
+                            <% } %>            
+                        </ul>
+                        <form class="form-inline">
+                            <input class="search form-control mr-sm-2" type="search" placeholder='Buscar "Alquileres"' aria-label="Search">
+                        </form>
+                    </article>
+                </nav>
+                <% if(filterNav){ %>
+                    <article class="filter-nav col-12 col-sm-12 col-lg-12 col-xl-12 bg-warning">
+                        <form action="">
+                            <ul>
+                                <li>
+                                    <select name="" id="">
+                                        <option disabled value="false">Fecha</option>
+                                        <option value="">24 hs</option>
+                                        <option value="">1 semana</option>
+                                        <option value="">1 mes</option>
+                                        <option value="">1 año</option>
+                                        <option value="">Todas las fechas</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <select name="" id="">
+                                        <option disabled value="false">Tipo</option>
+                                        <option value="">Casa</option>
+                                        <option value="">Departamento</option>
+                                        <option value="">Oficina</option>
+                                        <option value="">Galpón</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    Precio
+                                    <input type="range" name="" id="" maxlength="999999">
+                                </li>
+                                <li>
+                                    <select name="" id="">
+                                        <option disabled value="false">Localidad</option>
+                                        <option value="">Parque Patricios</option>
+                                        <option value="">Boedo</option>
+                                        <option value="">Caballito</option>
+                                        <option value="">Almagro</option>
+                                        <option value="">Villa Crespo</option>
+                                        <option value="">Palermo</option>
+                                        <option value="">Núñez</option>
+                                        <option value="">Recoleta</option>
+                                        <option value="">Colegiales</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </form>
+                    </article>
+                <% } %>
+            </header>
+            
